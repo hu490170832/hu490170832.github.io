@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="前端学习总结">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hc&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前置准备 开发环境 Node 环境 （必须）VS Code 开发工具 （非必须，你可以使用你喜欢的开发工具）  注册 NPM 账号 访问 NPM 官网 ，点击 Sign up 字样，输入邮箱用户名密码就可以完成创建了，注意这里的 Username 和 Password 将用于后续登录和发布包。Public Email 用于接收推送邮件。   开发 创建 NPM 项目 新建一个空文件夹运行命令行，切">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编写一个简易的Cli工具">
+<meta property="og:url" content="http://yoursite.com/2019/03/14/编写一个简易的Cli工具/index.html">
 <meta property="og:site_name" content="Hc&#39;s Blog">
-<meta property="og:description" content="前端学习总结">
+<meta property="og:description" content="前置准备 开发环境 Node 环境 （必须）VS Code 开发工具 （非必须，你可以使用你喜欢的开发工具）  注册 NPM 账号 访问 NPM 官网 ，点击 Sign up 字样，输入邮箱用户名密码就可以完成创建了，注意这里的 Username 和 Password 将用于后续登录和发布包。Public Email 用于接收推送邮件。   开发 创建 NPM 项目 新建一个空文件夹运行命令行，切">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-14T07:07:16.214Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hc&#39;s Blog">
-<meta name="twitter:description" content="前端学习总结">
+<meta name="twitter:title" content="编写一个简易的Cli工具">
+<meta name="twitter:description" content="前置准备 开发环境 Node 环境 （必须）VS Code 开发工具 （非必须，你可以使用你喜欢的开发工具）  注册 NPM 账号 访问 NPM 官网 ，点击 Sign up 字样，输入邮箱用户名密码就可以完成创建了，注意这里的 Username 和 Password 将用于后续登录和发布包。Public Email 用于接收推送邮件。   开发 创建 NPM 项目 新建一个空文件夹运行命令行，切">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/14/编写一个简易的Cli工具/">
 
 
 
 
 
-  <title>Hc's Blog</title>
+  <title>编写一个简易的Cli工具 | Hc's Blog</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/14/编写一个简易的Cli工具/" itemprop="url">编写一个简易的Cli工具</a></h1>
+          <h1 class="post-title" itemprop="name headline">编写一个简易的Cli工具</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><ol>
+        <h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><ol>
 <li><p>开发环境</p>
 <p>Node 环境 （必须）<br>VS Code 开发工具 （非必须，你可以使用你喜欢的开发工具）</p>
 </li>
@@ -344,8 +340,6 @@
 </li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -362,220 +356,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/浏览器缓存机制/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hc">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hc's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/06/浏览器缓存机制/" itemprop="url">浏览器缓存机制</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-06T14:11:58+08:00">
-                2019-03-06
-              </time>
+              <a href="/2019/03/06/浏览器缓存机制/" rel="next" title="浏览器缓存机制">
+                <i class="fa fa-chevron-left"></i> 浏览器缓存机制
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="浏览器缓存机制"><a href="#浏览器缓存机制" class="headerlink" title="浏览器缓存机制"></a><a href="https://juejin.im/post/5c4528a6f265da611a4822cc" target="_blank" rel="noopener">浏览器缓存机制</a></h1><h2 id="DNS-缓存"><a href="#DNS-缓存" class="headerlink" title="DNS 缓存"></a>DNS 缓存</h2><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><p>全称 Domain Name System ,即域名系统。</p>
-<blockquote>
-<p>万维网上作为域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。DNS协议运行在UDP协议之上，使用端口号53。</p>
-</blockquote>
-<h3 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h3><p>简单的说,通过域名,最终得到该域名对应的IP地址的过程叫做域名解析（或主机名解析）。</p>
-<blockquote>
-<p><a href="http://www.dnscache.com" target="_blank" rel="noopener">www.dnscache.com</a> (域名)  - DNS解析 -&gt; 11.222.33.444 (IP地址)</p>
-</blockquote>
-<h3 id="DNS缓存"><a href="#DNS缓存" class="headerlink" title="DNS缓存"></a>DNS缓存</h3><p>有dns的地方,就有缓存。浏览器、操作系统、Local DNS、根域名服务器，它们都会对DNS结果做一定程度的缓存。</p>
-<p>DNS查询过程如下:</p>
-<ol>
-<li>首先搜索浏览器自身的DNS缓存,如果存在，则域名解析到此完成。</li>
-<li>如果浏览器自身的缓存里面没有找到对应的条目，那么会尝试读取操作系统的hosts文件看是否存在对应的映射关系,如果存在，则域名解析到此完成。</li>
-<li>如果本地hosts文件不存在映射关系，则查找本地DNS服务器(ISP服务器,或者自己手动设置的DNS服务器),如果存在,域名到此解析完成。</li>
-<li>如果本地DNS服务器还没找到的话,它就会向根服务器发出请求,进行递归查询。</li>
-</ol>
-<h3 id="CDN-缓存"><a href="#CDN-缓存" class="headerlink" title="CDN 缓存"></a>CDN 缓存</h3><h4 id="什么是CDN"><a href="#什么是CDN" class="headerlink" title="什么是CDN"></a>什么是CDN</h4><p>全称 Content Delivery Network,即内容分发网络。<br>摘录一个形象的比喻,来理解CDN是什么。</p>
-<blockquote>
-<p>10年前，还没有火车票代售点一说，12306.cn更是无从说起。那时候火车票还只能在火车站的售票大厅购买，而我所在的小县城并不通火车，火车票都要去市里的火车站购买，而从我家到县城再到市里，来回就是4个小时车程，简直就是浪费生命。后来就好了，小县城里出现了火车票代售点，甚至乡镇上也有了代售点，可以直接在代售点购买火车票，方便了不少，全市人民再也不用在一个点苦逼的排队买票了。<br>简单的理解CDN就是这些代售点(缓存服务器)的承包商,他为买票者提供了便利,帮助他们在最近的地方(最近的CDN节点)用最短的时间(最短的请求时间)买到票(拿到资源),这样去火车站售票大厅排队的人也就少了。也就减轻了售票大厅的压力(起到分流作用,减轻服务器负载压力)。<br>用户在浏览网站的时候，CDN会选择一个离用户最近的CDN边缘节点来响应用户的请求，这样海南移动用户的请求就不会千里迢迢跑到北京电信机房的服务器（假设源站部署在北京电信机房）上了。</p>
-</blockquote>
-<h3 id="CDN缓存"><a href="#CDN缓存" class="headerlink" title="CDN缓存"></a>CDN缓存</h3><p>关于CDN缓存,在浏览器本地缓存失效后,浏览器会向CDN边缘节点发起请求。类似浏览器缓存,CDN边缘节点也存在着一套缓存机制。CDN边缘节点缓存策略因服务商不同而不同，但一般都会遵循http标准协议，通过http响应头中的<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cache-control: max-age   <span class="comment">//后面会提到</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="浏览器缓存-http缓存"><a href="#浏览器缓存-http缓存" class="headerlink" title="浏览器缓存(http缓存)"></a>浏览器缓存(http缓存)</h2><p><img src="/images/http.png" alt="image"><br>简单来说,浏览器缓存其实就是浏览器保存通过HTTP获取的所有资源,是浏览器将网络资源存储在本地的一种行为。</p>
-<h4 id="缓存的资源去哪里了"><a href="#缓存的资源去哪里了" class="headerlink" title="缓存的资源去哪里了?"></a>缓存的资源去哪里了?</h4><p>你可能会有疑问,浏览器存储了资源,那它把资源存储在哪里呢？</p>
-<h4 id="memory-cache"><a href="#memory-cache" class="headerlink" title="memory cache"></a>memory cache</h4><blockquote>
-<p>MemoryCache顾名思义，就是将资源缓存到内存中，等待下次访问时不需要重新下载资源，而直接从内存中获取。Webkit早已支持memoryCache。<br>目前Webkit资源分成两类，一类是主资源，比如HTML页面，或者下载项，一类是派生资源，比如HTML页面中内嵌的图片或者脚本链接，分别对应代码中两个类：MainResourceLoader和SubresourceLoader。虽然Webkit支持memoryCache，但是也只是针对派生资源，它对应的类为CachedResource，用于保存原始数据（比如CSS，JS等），以及解码过的图片数据。</p>
-</blockquote>
-<h4 id="disk-cache"><a href="#disk-cache" class="headerlink" title="disk cache"></a>disk cache</h4><blockquote>
-<p>DiskCache顾名思义，就是将资源缓存到磁盘中，等待下次访问时不需要重新下载资源，而直接从磁盘中获取，它的直接操作对象为CurlCacheManager。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>-</th>
-<th>memory cache</th>
-<th>disk cache</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>相同点</td>
-<td>只能存储一些派生类资源文件</td>
-<td>只能存储一些派生类资源文件</td>
-</tr>
-<tr>
-<td>不同点</td>
-<td>退出进程时数据会被清除</td>
-<td>退出进程时数据不会被清除</td>
-</tr>
-<tr>
-<td>存储资源</td>
-<td>一般脚本、字体、图片会存在内存当中</td>
-<td>一般非脚本会存在内存当中，如css等</td>
-</tr>
-</tbody>
-</table>
-<p>因为CSS文件加载一次就可渲染出来,我们不会频繁读取它,所以它不适合缓存到内存中,但是js之类的脚本却随时可能会执行,如果脚本在磁盘当中,我们在执行脚本的时候需要从磁盘取到内存中来,这样IO开销就很大了,有可能导致浏览器失去响应。</p>
-<h2 id="三级缓存原理-访问缓存优先级"><a href="#三级缓存原理-访问缓存优先级" class="headerlink" title="三级缓存原理 (访问缓存优先级)"></a>三级缓存原理 (访问缓存优先级)</h2><ol>
-<li>先在内存中查找,如果有,直接加载。</li>
-<li>如果内存中不存在,则在硬盘中查找,如果有直接加载。</li>
-<li>如果硬盘中也没有,那么就进行网络请求。</li>
-<li>请求获取的资源缓存到硬盘和内存。<h2 id="浏览器缓存的分类"><a href="#浏览器缓存的分类" class="headerlink" title="浏览器缓存的分类"></a>浏览器缓存的分类</h2></li>
-<li>强缓存</li>
-<li>协商缓存<br>浏览器再向服务器请求资源时,首先判断是否命中强缓存,再判断是否命中协商缓存!</li>
-</ol>
-<h3 id="浏览器缓存的优点"><a href="#浏览器缓存的优点" class="headerlink" title="浏览器缓存的优点"></a>浏览器缓存的优点</h3><ol>
-<li>减少了冗余的数据传输</li>
-<li>减少了服务器的负担，大大提升了网站的性能</li>
-<li>加快了客户端加载网页的速度</li>
-</ol>
-<h2 id="强缓存"><a href="#强缓存" class="headerlink" title="强缓存"></a>强缓存</h2><p>浏览器在加载资源时，会先根据本地缓存资源的 header 中的信息判断是否命中强缓存，如果命中则直接使用缓存中的资源不会再向服务器发送请求。</p>
-<p>这里的 header 中的信息指的是 expires 和 cahe-control.</p>
-<h2 id="Expires"><a href="#Expires" class="headerlink" title="Expires"></a>Expires</h2><p>该字段是 http1.0 时的规范，它的值为一个绝对时间的 GMT 格式的时间字符串，比如 Expires:Mon,18 Oct 2066 23:59:59 GMT。这个时间代表着这个资源的失效时间，在此时间之前，即命中缓存。这种方式有一个明显的缺点，由于失效时间是一个绝对时间，所以当服务器与客户端时间偏差较大时，就会导致缓存混乱。</p>
-<h2 id="Cache-Control"><a href="#Cache-Control" class="headerlink" title="Cache-Control"></a>Cache-Control</h2><p>Cache-Control 是 http1.1 时出现的 header 信息，主要是利用该字段的 max-age 值来进行判断，它是一个相对时间，例如 Cache-Control:max-age=3600，代表着资源的有效期是 3600 秒。cache-control 除了该字段外，还有下面几个比较常用的设置值：</p>
-<ul>
-<li>no-cache：需要进行协商缓存，发送请求到服务器确认是否使用缓存。</li>
-<li>no-store：禁止使用缓存，每一次都要重新请求数据。</li>
-<li>public：可以被所有的用户缓存，包括终端用户和 CDN 等中间代理服务器。</li>
-<li>private：只能被终端用户的浏览器缓存，不允许 CDN 等中继缓存服务器对其缓存。<br>Cache-Control 与 Expires 可以在服务端配置同时启用，同时启用的时候 Cache-Control 优先级高。<h2 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h2></li>
-</ul>
-<p>当强缓存没有命中的时候，浏览器会发送一个请求到服务器，服务器根据 header 中的部分信息来判断是否命中缓存。如果命中，则返回 304 ，告诉浏览器资源未更新，可使用本地的缓存。<br>这里的 header 中的信息指的是 Last-Modify/If-Modify-Since 和 ETag/If-None-Match.</p>
-<h3 id="Last-Modify-If-Modify-Since"><a href="#Last-Modify-If-Modify-Since" class="headerlink" title="Last-Modify/If-Modify-Since"></a>Last-Modify/If-Modify-Since</h3><p>浏览器第一次请求一个资源的时候，服务器返回的 header 中会加上 Last-Modify，Last-modify 是一个时间标识该资源的最后修改时间。<br>当浏览器再次请求该资源时，request 的请求头中会包含 If-Modify-Since，该值为缓存之前返回的 Last-Modify。服务器收到 If-Modify-Since 后，根据资源的最后修改时间判断是否命中缓存。<br>如果命中缓存，则返回 304，并且不会返回资源内容，并且不会返回 Last-Modify。<br>缺点:<br>短时间(毫秒级)内资源发生了改变，Last-Modified 并不会发生变化。<br>周期性变化。如果这个资源在一个周期内修改回原来的样子了，我们认为是可以使用缓存的，但是 Last-Modified 可不这样认为,因此便有了 ETag。</p>
-<h3 id="ETag-If-None-Match"><a href="#ETag-If-None-Match" class="headerlink" title="ETag/If-None-Match"></a>ETag/If-None-Match</h3><p>与 Last-Modify/If-Modify-Since 不同的是，Etag/If-None-Match 返回的是一个校验码。ETag 可以保证每一个资源是唯一的，资源变化都会导致 ETag 变化。服务器根据浏览器上送的 If-None-Match 值来判断是否命中缓存。<br>与 Last-Modified 不一样的是，当服务器返回 304 Not Modified 的响应时，由于 ETag 重新生成过，response header 中还会把这个 ETag 返回，即使这个 ETag 跟之前的没有变化。<br>Last-Modified 与 ETag 是可以一起使用的，服务器会优先验证 ETag，一致的情况下，才会继续比对 Last-Modified，最后才决定是否返回 304。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当浏览器再次访问一个已经访问过的资源时，它会这样做：</p>
-<ol>
-<li>看看是否命中强缓存，如果命中，就直接使用缓存了。</li>
-<li>如果没有命中强缓存，就发请求到服务器检查是否命中协商缓存。</li>
-<li>如果命中协商缓存，服务器会返回 304 告诉浏览器使用本地缓存。</li>
-<li>否则，返回最新的资源。</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -585,10 +387,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -596,6 +399,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -616,8 +423,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -668,6 +484,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前置准备"><span class="nav-number">1.</span> <span class="nav-text">前置准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发"><span class="nav-number">2.</span> <span class="nav-text">开发</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -801,6 +633,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
