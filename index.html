@@ -307,6 +307,7 @@
 <li>雪碧图</li>
 <li>内联图片</li>
 <li>合并脚本和样式表</li>
+<li>UI库按需加载，异步组件</li>
 </ul>
 <h2 id="规则2-使用内容分发网络-CDN"><a href="#规则2-使用内容分发网络-CDN" class="headerlink" title="规则2-使用内容分发网络(CDN)"></a>规则2-使用内容分发网络(CDN)</h2><h2 id="规则3-合理使用浏览器缓存"><a href="#规则3-合理使用浏览器缓存" class="headerlink" title="规则3-合理使用浏览器缓存"></a>规则3-合理使用浏览器缓存</h2><h3 id="css、js、img等静态资源使用强缓存-利用webpack等打包工具添加hash值-区分版本"><a href="#css、js、img等静态资源使用强缓存-利用webpack等打包工具添加hash值-区分版本" class="headerlink" title="css、js、img等静态资源使用强缓存(利用webpack等打包工具添加hash值,区分版本)"></a>css、js、img等静态资源使用强缓存(利用webpack等打包工具添加hash值,区分版本)</h3><p>Expires头，Cache-Control:max-age, 可以同时使用，兼容IE，expires是绝对时间存在缺点,Cache-Control: max-age是相对时间。</p>
 <h3 id="html文档使用协商缓存"><a href="#html文档使用协商缓存" class="headerlink" title="html文档使用协商缓存"></a>html文档使用协商缓存</h3><ul>
