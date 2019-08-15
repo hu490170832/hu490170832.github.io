@@ -232,6 +232,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/15/小程序自定义导航栏适配-iPX底部适配/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hc">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hc's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/15/小程序自定义导航栏适配-iPX底部适配/" itemprop="url">小程序自定义导航栏适配,iPX底部适配</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-15T17:14:29+08:00">
+                2019-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文主要介绍小程序自定义导航栏 title 和 logo 居中适配,iphoneX 底部适配</p>
+<h2 id="自定义导航栏"><a href="#自定义导航栏" class="headerlink" title="自定义导航栏"></a>自定义导航栏</h2><p>要用自定义的导航栏需要在 app.json 中配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;navigationStyle&quot;: &quot;custom&quot;</span><br></pre></td></tr></table></figure>
+<p>设置手机状态栏的高度到store<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setTopBarHeight () &#123;</span><br><span class="line">  const res = wx.getSystemInfoSync()</span><br><span class="line">  store.commit(&apos;setStatusBarHeight&apos;, res.statusBarHeight)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>动态改变自定义状态栏的paddingTop</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;header&quot; :style=&quot;&#123;paddingTop: statusBarHeight+&apos;px&apos; &#125;&quot; &gt;</span><br><span class="line">    xxx</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.header</span><br><span class="line">    top 0</span><br><span class="line">    height 44px</span><br><span class="line">    display flex</span><br><span class="line">    align-items center</span><br><span class="line">    padding-left 22px</span><br><span class="line">    position fixed</span><br><span class="line">    z-index 999</span><br><span class="line">    width calc(100% - 22px)</span><br></pre></td></tr></table></figure>
+<h2 id="iphoneX底部适配"><a href="#iphoneX底部适配" class="headerlink" title="iphoneX底部适配"></a>iphoneX底部适配</h2><p>首先设置是否是iphoneX的布尔值到store</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">setIsIPhoneX () &#123;</span><br><span class="line">  const res = wx.getSystemInfoSync()</span><br><span class="line">  if (res.model.search(&apos;iPhone X&apos;) !== -1) &#123;</span><br><span class="line">    store.commit(&apos;setIsIPX&apos;, true)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在 iPhone X 中我们需要把吸底按钮往上偏移 34 像素，可通过在 CSS 样式中设置 padding-bottom 为 34px 实现，根据store里面的isIPX动态添加样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.feed-bottom-view &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 48px; /* 吸底按钮的高度 */</span><br><span class="line">  bottom: 0;</span><br><span class="line">  opacity: 0.95;</span><br><span class="line">  position: fixed;</span><br><span class="line">  border-top-style: solid;</span><br><span class="line">  border-top-width: 0.5px; /* 分割线的高度 */</span><br><span class="line">  border-color: lightgrey;</span><br><span class="line">  background-color: #F8F8F8;</span><br><span class="line">&#125;</span><br><span class="line">.feed-bottom-view-IPX &#123;</span><br><span class="line">  /* iPhone X 内容往上偏移 34px */</span><br><span class="line">  padding-bottom: 34px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/12/网址性能优化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -793,7 +923,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
